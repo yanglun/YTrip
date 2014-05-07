@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <com.oldyang.ui.view.IconItemView
+        android:id="@+id/iiv_my_product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        custom:item_background="@drawable/list_item_top_selector"
+        custom:leftImage="@drawable/logo"
+        custom:leftImageHeight="40"
+        custom:text="意见反馈" >
+    </com.oldyang.ui.view.IconItemView>
+
+    <com.oldyang.ui.view.IconItemView
+        android:id="@+id/iiv_my_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        custom:item_background="@drawable/list_item_middle_selector"
+        custom:leftImage="@drawable/logo"
+        custom:leftImageHeight="40"
+        custom:text="系统帮助" >
+    </com.oldyang.ui.view.IconItemView>
+
+    <com.oldyang.ui.view.IconItemView
+        android:id="@+id/iiv_my_favorite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        custom:item_background="@drawable/list_item_middle_selector"
+        custom:leftImage="@drawable/logo"
+        custom:leftImageHeight="40"
+        custom:text="关于帮5美" >
+    </com.oldyang.ui.view.IconItemView>
+
+    <com.oldyang.ui.view.IconItemView
+        android:id="@+id/iiv_my_blog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        custom:item_background="@drawable/list_item_middle_selector"
+        custom:leftImage="@drawable/logo"
+        custom:leftImageHeight="40"
+        custom:text="系统协议" >
+    </com.oldyang.ui.view.IconItemView>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <com.oldyang.ui.view.IconItemView
+            android:id="@+id/iiv_my_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            custom:item_background="@drawable/list_item_middle_selector"
+            custom:leftImage="@drawable/logo"
+            custom:leftImageHeight="40"
+            custom:showRight="false"
+            custom:text="声音和震动" >
+        </com.oldyang.ui.view.IconItemView>
+<!-- 
+        <com.b5m.b5mei.view.togglebuttonswitch.ToggleButtonSwitch
+            android:id="@+id/toggle_btn"
+            android:layout_width="52dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true" 
+            android:layout_centerVertical="true">
+        </com.b5m.b5mei.view.togglebuttonswitch.ToggleButtonSwitch>
+         -->
+    </RelativeLayout>
+
+    <com.oldyang.ui.view.IconItemView
+        android:id="@+id/iiv_my_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        custom:item_background="@drawable/list_item_bottom_selector"
+        custom:leftImage="@drawable/logo"
+        custom:leftImageHeight="40"
+        custom:text="清理缓存" >
+    </com.oldyang.ui.view.IconItemView>
+
+</LinearLayout>

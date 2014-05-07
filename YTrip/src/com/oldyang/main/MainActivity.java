@@ -12,6 +12,7 @@ import java.util.List;
 import com.oldyang.R;
 import com.oldyang.bean.HotelBean;
 import com.oldyang.main.hotel.HotelBaseSearchActivity;
+import com.oldyang.setting.SettingActivity;
 import com.oldyang.util.YTripActivityHelper;
 
 import android.app.Activity;
@@ -34,14 +35,14 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ImageView.ScaleType;
 import android.widget.ListView;
 
-public class MainActivity extends Activity implements OnItemClickListener,View.OnClickListener
+public class MainActivity extends Activity implements OnItemClickListener, View.OnClickListener
 {
     private ArrayList<Drawable> imgList = new ArrayList<Drawable>();
     private MyGallery gallery;
     private ListView lv_hot_hotel;
     private HotHotelAdapter mHotHotelAdapter;
     private ArrayList<HotelBean> mHotelArray;
-    private LinearLayout ll_order_hotel;
+    private LinearLayout ll_order_hotel, ll_setting;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -51,9 +52,10 @@ public class MainActivity extends Activity implements OnItemClickListener,View.O
         setContentView(R.layout.ytrip_main);
         initMyGallery();
         initHotHotel();
-        ll_order_hotel =(LinearLayout) this.findViewById(R.id.ll_order_hotel);
+        ll_order_hotel = (LinearLayout) this.findViewById(R.id.ll_order_hotel);
         ll_order_hotel.setOnClickListener(this);
-        
+        ll_setting = (LinearLayout) this.findViewById(R.id.ll_setting);
+        ll_setting.setOnClickListener(this);
     }
 
     private void initImgList()
@@ -110,7 +112,6 @@ public class MainActivity extends Activity implements OnItemClickListener,View.O
         }
         mHotHotelAdapter = new HotHotelAdapter();
         mHotHotelAdapter.setData(mHotelArray);
-        
         lv_hot_hotel.setAdapter(mHotHotelAdapter);
         lv_hot_hotel.setOnItemClickListener(this);
     }
@@ -188,7 +189,7 @@ public class MainActivity extends Activity implements OnItemClickListener,View.O
         @Override
         public HotelBean getItem(int position)
         {
-            return (HotelBean)data.get(position);
+            return (HotelBean) data.get(position);
         }
 
         @Override
@@ -223,7 +224,6 @@ public class MainActivity extends Activity implements OnItemClickListener,View.O
     public void onItemClick(AdapterView<?> arg0 , View arg1 , int arg2 , long arg3)
     {
         YTripActivityHelper.startActivity(this, HotelDetailActivity.class);
-        
     }
 
     @Override
@@ -235,9 +235,11 @@ public class MainActivity extends Activity implements OnItemClickListener,View.O
             case R.id.ll_order_hotel:
                 YTripActivityHelper.startActivity(this, HotelBaseSearchActivity.class);
                 break;
+            case R.id.ll_setting:
+                YTripActivityHelper.startActivity(this, SettingActivity.class);
+                break;
             default:
                 break;
         }
-        
     }
 }

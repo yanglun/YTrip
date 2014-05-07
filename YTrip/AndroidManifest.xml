@@ -11,7 +11,9 @@
         android:allowBackup="true"
         android:icon="@drawable/logo"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme" 
+         android:name=".application.MainApplication"
+        >
 
         <!-- main model -->
         <activity
@@ -43,7 +45,10 @@
             android:name=".main.hotel.HotelBaseSearchResultActivity"
             android:windowSoftInputMode="adjustPan" >
         </activity>
-        
+               <activity
+            android:name=".setting.SettingActivity"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
         
     </application>
 
