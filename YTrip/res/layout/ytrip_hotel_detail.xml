@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.oldyang.ui.compoment.YTripHeaderView
+        xmlns:custom="http://schemas.android.com/apk/res-auto"
+        android:id="@id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        custom:leftText="返回"
+        custom:rightText="预定"
+        custom:showLeft="true"
+        custom:showRight="true"
+        custom:text="酒店详情" />
+
+</LinearLayout>

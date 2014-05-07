@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="header" type="id"/>
+    <item name="gridview" type="id"/>
+    <item name="webview" type="id"/>
+    <item name="scrollview" type="id"/>
+    <item name="drag_handle" type="id"/>
+    <item name="click_remove" type="id"/>
+    <item name="selected_view" type="id"/>
+    <!--  -->
+    <item name="v_position" type="id"/>
+    <item name="v_object" type="id"/>
+    <item name="expandable_toggle_button" type="id"/>
+    <item name="expandable" type="id"/>
+    <item name="leftImageView" type="id"></item>
+
+</resources>

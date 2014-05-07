@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <!-- The PullToRefreshListView replaces a standard ListView widget. -->
+
+    <com.oldyang.afw.widget.pulltorefresh.PullToRefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/lv_global_refreshandloadmore"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@color/global_listviewscrollingCache"
+        android:divider="@drawable/line_normal"
+        android:dividerHeight="1dp"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="true"
+        android:footerDividersEnabled="true"
+        android:headerDividersEnabled="true"
+        android:listSelector="@drawable/ytrip_list_item_selector"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbars="none"
+        android:smoothScrollbar="true"
+        android:tag="lv_global_refreshandloadmore"
+        ptr:ptrAnimationStyle="flip" />
+
+</RelativeLayout>

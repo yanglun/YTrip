@@ -1,0 +1,50 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.oldyang"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="16" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!-- main model -->
+        <activity
+            android:name=".welcome.WelcomeActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".main.MainActivity"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name=".main.HotelDetailActivity"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name=".main.hotel.HotelBaseSearchActivity"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+            <activity
+            android:name=".ui.CityChoiceActivity"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+              <activity
+            android:name=".main.hotel.HotelBaseSearchResultActivity"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        
+        
+    </application>
+
+</manifest>
