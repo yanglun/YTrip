@@ -12,7 +12,8 @@ import java.util.List;
 import com.oldyang.R;
 import com.oldyang.bean.HotelBean;
 import com.oldyang.main.hotel.HotelBaseSearchActivity;
-import com.oldyang.setting.SettingActivity;
+import com.oldyang.ui.personalsetting.PersonalSettingActivity;
+import com.oldyang.ui.setting.SettingActivity;
 import com.oldyang.util.YTripActivityHelper;
 
 import android.app.Activity;
@@ -42,7 +43,7 @@ public class MainActivity extends Activity implements OnItemClickListener, View.
     private ListView lv_hot_hotel;
     private HotHotelAdapter mHotHotelAdapter;
     private ArrayList<HotelBean> mHotelArray;
-    private LinearLayout ll_order_hotel, ll_setting;
+    private LinearLayout ll_order_hotel, ll_setting,ll_personal_setting;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -56,6 +57,8 @@ public class MainActivity extends Activity implements OnItemClickListener, View.
         ll_order_hotel.setOnClickListener(this);
         ll_setting = (LinearLayout) this.findViewById(R.id.ll_setting);
         ll_setting.setOnClickListener(this);
+        ll_personal_setting = (LinearLayout) this.findViewById(R.id.ll_personal_setting);
+        ll_personal_setting.setOnClickListener(this);
     }
 
     private void initImgList()
@@ -237,6 +240,9 @@ public class MainActivity extends Activity implements OnItemClickListener, View.
                 break;
             case R.id.ll_setting:
                 YTripActivityHelper.startActivity(this, SettingActivity.class);
+                break;
+            case R.id.ll_personal_setting:
+                YTripActivityHelper.startActivity(this, PersonalSettingActivity.class);
                 break;
             default:
                 break;

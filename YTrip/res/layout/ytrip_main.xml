@@ -54,7 +54,7 @@
                 android:layout_weight="1"
                 android:gravity="center_horizontal"
                 android:orientation="vertical" 
-                     android:id="@+id/ll_setting"
+                     android:id="@+id/ll_personal_setting"
                 android:clickable="true">
 
                 <ImageView
@@ -66,7 +66,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="个人设置" >
+                    android:text="私人定制" >
                 </TextView>
             </LinearLayout>
         </LinearLayout>
@@ -98,6 +98,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/ll_setting"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -113,7 +114,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="更多" >
+                    android:text="系统设置" >
                 </TextView>
             </LinearLayout>
         </LinearLayout>
