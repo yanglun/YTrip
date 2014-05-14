@@ -52,6 +52,12 @@
             android:name=".ui.personalsetting.PersonalSettingActivity"
             android:windowSoftInputMode="adjustPan" >
         </activity>
+        
+            <activity
+            android:name=".ui.personalsetting.PersonalSettingEditorActivity"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        
     </application>
 
 </manifest>

@@ -10,6 +10,7 @@ import java.util.ArrayList;
 import com.oldyang.R;
 import com.oldyang.bean.HotelBean;
 import com.oldyang.main.HotelDetailActivity;
+import com.oldyang.ui.compoment.YTripHeaderView;
 import com.oldyang.util.YTripActivityHelper;
 import android.app.Activity;
 import android.os.Bundle;
@@ -28,22 +29,28 @@ public class HotelBaseSearchResultActivity extends Activity implements OnItemCli
     private ListView lv_hotel;
     private ArrayList<HotelBean> mHotelArray;
     private HotHotelAdapter mHotHotelAdapter;
-
+    private   YTripHeaderView headerView;
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         // TODO Auto-generated method stub
         super.onCreate(savedInstanceState);
         this.setContentView(R.layout.ytrip_hotel_base_search_result);
+        headerView = (YTripHeaderView) findViewById(R.id.header);
+        headerView.leftButton.setOnClickListener(this);
         initHotHotel();
     }
 
     @Override
     public void onClick(View v)
     {
-        // TODO Auto-generated method stub
         switch (v.getId())
         {
+            case R.id.btn_header_left:
+                finish();
+                break;
+            default:
+                break;
         }
     }
 

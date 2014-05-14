@@ -11,8 +11,9 @@
         android:layout_height="wrap_content"
         custom:text="酒店搜索"
         custom:showRight="true"
-        custom:showLeft="false"
-        custom:rightText ="查询" />
+        custom:showLeft="true"
+        custom:rightText ="查询"
+         custom:leftText ="返回" />
 
     <RelativeLayout
         android:id="@+id/rl_city_choice"

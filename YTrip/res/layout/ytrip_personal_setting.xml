@@ -12,7 +12,7 @@
         custom:leftText="返回"
         custom:rightText="预定"
         custom:showLeft="true"
-        custom:showRight="true"
+        custom:showRight="false"
         custom:text="个人设置" />
 
     <LinearLayout
@@ -22,10 +22,11 @@
         android:padding="10dp" >
 
         <LinearLayout
-            android:id="@+id/iiv_my_product"
+            android:id="@+id/ll_item_1"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/list_item_top_selector" >
+            android:layout_height="45dp"
+            android:background="@drawable/list_item_top_selector"
+            android:gravity="center_vertical" >
 
             <TextView
                 android:layout_width="wrap_content"
@@ -34,7 +35,7 @@
                 android:text="酒店价格:" >
             </TextView>
 
-           <TextView
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -49,10 +50,11 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/iiv_my_product"
+            android:id="@+id/ll_item_2"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/list_item_middle_selector" >
+            android:layout_height="45dp"
+            android:background="@drawable/list_item_middle_selector"
+            android:gravity="center_vertical" >
 
             <TextView
                 android:layout_width="wrap_content"
@@ -61,7 +63,7 @@
                 android:text="酒店星级:" >
             </TextView>
 
-           <TextView
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -76,10 +78,11 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/iiv_my_product"
+            android:id="@+id/ll_item_3"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/list_item_middle_selector" >
+            android:layout_height="45dp"
+            android:background="@drawable/list_item_middle_selector"
+            android:gravity="center_vertical" >
 
             <TextView
                 android:layout_width="wrap_content"
@@ -103,10 +106,11 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/iiv_my_product"
+            android:id="@+id/ll_item_4"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/list_item_middle_selector" >
+            android:layout_height="45dp"
+            android:background="@drawable/list_item_middle_selector"
+            android:gravity="center_vertical" >
 
             <TextView
                 android:layout_width="wrap_content"
@@ -115,7 +119,7 @@
                 android:text="酒店设施:" >
             </TextView>
 
-           <TextView
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -130,10 +134,11 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/iiv_my_product"
+            android:id="@+id/ll_item_5"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/list_item_middle_selector" >
+            android:layout_height="45dp"
+            android:background="@drawable/list_item_middle_selector"
+            android:gravity="center_vertical" >
 
             <TextView
                 android:layout_width="wrap_content"
@@ -157,10 +162,11 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/iiv_my_product"
+            android:id="@+id/ll_item_6"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/list_item_middle_selector" >
+            android:layout_height="45dp"
+            android:background="@drawable/list_item_middle_selector"
+            android:gravity="center_vertical" >
 
             <TextView
                 android:layout_width="wrap_content"
@@ -169,7 +175,7 @@
                 android:text="出行方式:" >
             </TextView>
 
-             <TextView
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -184,10 +190,11 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/iiv_my_product"
+            android:id="@+id/ll_item_7"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/list_item_bottom_selector" >
+            android:layout_height="45dp"
+            android:background="@drawable/list_item_bottom_selector"
+            android:gravity="center_vertical" >
 
             <TextView
                 android:layout_width="wrap_content"

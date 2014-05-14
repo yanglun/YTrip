@@ -12,8 +12,8 @@
         custom:leftText="返回"
         custom:rightText="预定"
         custom:showLeft="true"
-        custom:showRight="true"
-        custom:text="个人设置" />
+        custom:showRight="false"
+        custom:text="系统设置" />
 
     <LinearLayout
         android:padding="10dp"
@@ -21,7 +21,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical" >
 
-        <com.oldyang.ui.view.IconItemView
+        <com.oldyang.ui.view.iconitem.IconItemView
             android:id="@+id/iiv_my_product"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -29,9 +29,9 @@
             custom:leftImage="@drawable/logo"
             custom:leftImageHeight="40"
             custom:text="意见反馈" >
-        </com.oldyang.ui.view.IconItemView>
+        </com.oldyang.ui.view.iconitem.IconItemView>
 
-        <com.oldyang.ui.view.IconItemView
+        <com.oldyang.ui.view.iconitem.IconItemView
             android:id="@+id/iiv_my_contact"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -39,19 +39,19 @@
             custom:leftImage="@drawable/logo"
             custom:leftImageHeight="40"
             custom:text="系统帮助" >
-        </com.oldyang.ui.view.IconItemView>
+        </com.oldyang.ui.view.iconitem.IconItemView>
 
-        <com.oldyang.ui.view.IconItemView
+        <com.oldyang.ui.view.iconitem.IconItemView
             android:id="@+id/iiv_my_favorite"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             custom:item_background="@drawable/list_item_middle_selector"
             custom:leftImage="@drawable/logo"
             custom:leftImageHeight="40"
-            custom:text="关于帮5美" >
-        </com.oldyang.ui.view.IconItemView>
+            custom:text="关于YTrip" >
+        </com.oldyang.ui.view.iconitem.IconItemView>
 
-        <com.oldyang.ui.view.IconItemView
+        <com.oldyang.ui.view.iconitem.IconItemView
             android:id="@+id/iiv_my_blog"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -59,13 +59,13 @@
             custom:leftImage="@drawable/logo"
             custom:leftImageHeight="40"
             custom:text="系统协议" >
-        </com.oldyang.ui.view.IconItemView>
+        </com.oldyang.ui.view.iconitem.IconItemView>
 
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" >
 
-            <com.oldyang.ui.view.IconItemView
+            <com.oldyang.ui.view.iconitem.IconItemView
                 android:id="@+id/iiv_my_setting"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -74,10 +74,10 @@
                 custom:leftImageHeight="40"
                 custom:showRight="false"
                 custom:text="声音和震动" >
-            </com.oldyang.ui.view.IconItemView>
+            </com.oldyang.ui.view.iconitem.IconItemView>
         </RelativeLayout>
 
-        <com.oldyang.ui.view.IconItemView
+        <com.oldyang.ui.view.iconitem.IconItemView
             android:id="@+id/iiv_my_setting"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -85,7 +85,7 @@
             custom:leftImage="@drawable/logo"
             custom:leftImageHeight="40"
             custom:text="清理缓存" >
-        </com.oldyang.ui.view.IconItemView>
+        </com.oldyang.ui.view.iconitem.IconItemView>
     </LinearLayout>
 
 </LinearLayout>

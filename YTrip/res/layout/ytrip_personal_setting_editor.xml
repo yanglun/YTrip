@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
     <com.oldyang.ui.compoment.YTripHeaderView
-        xmlns:custom="http://schemas.android.com/apk/res-auto"
         android:id="@id/header"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         custom:leftText="返回"
-        custom:rightText="预定"
+        custom:rightText="确定"
         custom:showLeft="true"
         custom:showRight="true"
-        custom:text="酒店详情" />
+        custom:text="选择性别" />
 
-    <ImageView
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:background="@drawable/hotel_detail" >
-    </ImageView>
+    <com.oldyang.ui.view.selectitem.SelectListItemView
+        android:id="@+id/sliv_itemview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </com.oldyang.ui.view.selectitem.SelectListItemView>
 
 </LinearLayout>

@@ -9,9 +9,10 @@
         android:id="@id/header"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        custom:showLeft="false"
+        custom:showLeft="true"
         custom:showRight="false"
-        custom:text="酒店" />
+        custom:text="酒店" 
+            custom:leftText="返回"/>
 
     <ListView
         android:id="@+id/lv_hotel"

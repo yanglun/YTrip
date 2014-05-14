@@ -8,6 +8,7 @@ import com.oldyang.R;
 import com.oldyang.afw.widget.pulltorefresh.PullToRefreshBase.Mode;
 import com.oldyang.afw.widget.pulltorefresh.PullToRefreshListView;
 import com.oldyang.db.DbCityHelper;
+import com.oldyang.ui.compoment.YTripHeaderView;
 
 import android.app.Activity;
 import android.content.Context;
@@ -29,6 +30,7 @@ public class CityChoiceActivity extends Activity implements View.OnClickListener
     private CtiyAdapter mCtiyAdapter;
     private ArrayList<String> mArrayList;
     PullToRefreshListView mplv;
+    YTripHeaderView headerView;
 
     @Override
     public void onCreate(Bundle savedInstanceState)
@@ -43,24 +45,12 @@ public class CityChoiceActivity extends Activity implements View.OnClickListener
         mListView = mplv.getRefreshableView();
         mCtiyAdapter = new CtiyAdapter(this, mArrayList);
         mListView.setAdapter(mCtiyAdapter);
-        //        OnItemClickListener listener = new OnItemClickListener()
-        //        {
-        //            @Override
-        //            public void onItemClick(AdapterView<?> arg0 , View arg1 , int position , long arg3)
-        //            {
-        //                Bundle b = new Bundle();
-        //                b.putString("province", (String) mCtiyAdapter.getItem(position - 1));
-        //                B5MActivityHelper.startActivity(mActivity, UserInfoSchoolChoiceActivity.class, b);
-        //            }
-        //        };
-        //        mListView.setOnItemClickListener(listener);
+        headerView = (YTripHeaderView) findViewById(R.id.header);
+        headerView.leftButton.setOnClickListener(this);
+        
     }
 
-    //    @Override
-    //    public void doInitDataes()
-    //    {
-    //        setHeaderTitle("选择省份");
-    //    }
+
     @Override
     public void onResume()
     {
@@ -138,6 +128,9 @@ public class CityChoiceActivity extends Activity implements View.OnClickListener
     {
         switch (v.getId())
         {
+            case R.id.btn_header_left:
+                finish();
+                break;
             default:
                 break;
         }

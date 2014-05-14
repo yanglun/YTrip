@@ -26,8 +26,9 @@ public class HotelBaseSearchActivity extends Activity implements View.OnClickLis
     private DatePickerDialog datePickerDialog;
     private Calendar calendar = Calendar.getInstance();
     public static final String DATEPICKER_TAG = "datepicker";
-    private TextView tv_date_start,tv_date_end;
-   private  YTripHeaderView headerView;
+    private TextView tv_date_start, tv_date_end;
+    private YTripHeaderView headerView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -36,15 +37,13 @@ public class HotelBaseSearchActivity extends Activity implements View.OnClickLis
         this.setContentView(R.layout.ytrip_hotel_base_search);
         headerView = (YTripHeaderView) findViewById(R.id.header);
         headerView.rightButton.setOnClickListener(this);
+        headerView.leftButton.setOnClickListener(this);
         rl_city_choice = (RelativeLayout) this.findViewById(R.id.rl_city_choice);
         rl_city_choice.setOnClickListener(this);
-        
         tv_date_start = (TextView) this.findViewById(R.id.tv_date_start);
         tv_date_start.setText(CommUtil.getDate(0));
-        
         tv_date_end = (TextView) this.findViewById(R.id.tv_date_end);
         tv_date_end.setText(CommUtil.getDate(2));
-        
     }
 
     @Override
@@ -56,13 +55,11 @@ public class HotelBaseSearchActivity extends Activity implements View.OnClickLis
             case R.id.rl_city_choice:
                 YTripActivityHelper.startActivity(this, CityChoiceActivity.class);
                 break;
-                
             case R.id.btn_header_right:
                 YTripActivityHelper.startActivity(this, HotelBaseSearchResultActivity.class);
-//                datePickerDialog.setVibrate(true);
-//                datePickerDialog.setYearRange(1970, calendar.get(Calendar.YEAR));
-////                datePickerDialog.show(getFragmentManager(), DATEPICKER_TAG);
-//                datePickerDialog.show(getFragmentManager(), "");
+                break;
+            case R.id.btn_header_left:
+                this.finish();
                 break;
             default:
                 break;

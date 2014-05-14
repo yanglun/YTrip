@@ -6,7 +6,7 @@
  * [版　　权]:Copyright © 2012 B5Msoft Co,Ltd. 
 */
 
-package com.oldyang.ui.view;
+package com.oldyang.ui.view.iconitem;
 
 
 import com.oldyang.R;
